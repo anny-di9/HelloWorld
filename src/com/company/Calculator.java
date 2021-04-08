@@ -6,15 +6,15 @@ public class Calculator {
 
   public static void main(String[] args) {
 
-    int num1;
-    int num2;
-    int operation;
+    double num1;
+    double num2;
+    double operation;
     char op;
 
     Scanner calc = new Scanner(System.in);
     System.out.print("Введите два числа через пробел без запятых : ");
-    num1 = calc.nextInt();
-    num2 = calc.nextInt();
+    num1 = calc.nextDouble();
+    num2 = calc.nextDouble();
     System.out.printf("Выберите и напишите нужный символ ( +, -, *, / ): ");
     op = calc.next().charAt(0);
     switch (op) {
